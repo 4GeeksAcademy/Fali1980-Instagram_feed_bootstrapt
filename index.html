@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/61ca86d72a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid p-2">
+
+          <span class="navbar-brand mb-0 ml-5 h1"><i class="fab fa-instagram"></i> Instagram</span>
+          
+             <div class="dropdown">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#window-create">Create a new post</button>
+                    <div class="modal fade" id="window-create" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Create a new post</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <caption>Caption:</caption>
+                            <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here"></textarea>
+                          </div>
+                          <div class="justify-content-start px-3 mb-5">
+                            <button type="button" class="btn btn-light btn-sm ml-2">
+                              <i class="bi bi-camera-fill"></i>
+                            </button>
+                            <button type="button" class="btn btn-light btn-sm">
+                              <i class="bi bi-geo-alt-fill"></i>
+                            </button>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success">Publish</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       <i class="bi bi-gear"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Profile</a></li>
+                      <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                      <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                    </ul>
+              </div>   
+                
+          </div>
+        </div>
+      </nav>
+      
+    <ul class="nav nav-tabs justify-content-center mt-2" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="bi bi-grid-3x3"></i></button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="bi bi-square-fill"></i></button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <!--Fotos en 3 columnas-->
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+          <div class="container grid-gap-3 mt-5">
+            <div class="row gy-3 mb-4">
+              <div class="col-12 col-md-6 col-lg-4">
+                <img class="img-fluid" width="400" src="https://us.123rf.com/450wm/haiderali886/haiderali8862306/haiderali886230600578/207089377-perros-hermosos-con-gafas-de-sol-capturando-selfies-generativos-ai.jpg?ver=6" alt="...">
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <img class="img-fluid" width="400" src="https://images.unsplash.com/photo-1524856949007-80db29955b17?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHJhbmRvbXxlbnwwfHwwfHx8MA%3D%3D" alt="...">
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <img class="img-fluid" width="400" src="https://images.unsplash.com/photo-1473172707857-f9e276582ab6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHJhbmRvbXxlbnwwfHwwfHx8MA%3D%3D" alt="...">
+              </div>
+            </div>
+            <div class="row gy-3 mb-4">
+              <div class="col-12 col-md-6 col-lg-4">
+                <img class="img-fluid" width="400" src="https://images.unsplash.com/photo-1605142859862-978be7eba909?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="...">
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <img class="img-fluid" width="400" src="https://images.unsplash.com/photo-1433162653888-a571db5ccccf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="...">
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <img class="img-fluid" width="400" src="https://images.unsplash.com/photo-1587590227264-0ac64ce63ce8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="...">
+              </div>
+            </div>
+            <div class="row gy-3 mb-4">
+              <div class="col-12 col-md-6 col-lg-4">
+                <img class="img-fluid" width="400" src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="...">
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <img class="img-fluid" width="400" src="https://plus.unsplash.com/premium_photo-1661629473263-572abf51d7c2?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="...">
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <img class="img-fluid" width="400" src="https://images.unsplash.com/photo-1503751071777-d2918b21bbd9?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="...">
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!--Fotos en 1 columna-->
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="container mt-5">
+          <div class="row justify-content-center mb-4">
+            <div class="col-6">
+              <div class="card my-4 mx-auto">
+                <div class="row justify-content-between align-items-center p-3">
+                  <h5 class="col-10 card-title mb-0">My dogs in the beach</h5>
+                  <h5 class="col-2 card-text">08/23</h5>
+                </div>
+                  <img src="https://us.123rf.com/450wm/haiderali886/haiderali8862306/haiderali886230600578/207089377-perros-hermosos-con-gafas-de-sol-capturando-selfies-generativos-ai.jpg?ver=6" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p><strong>452 Likes</strong></p>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur natus veniam perferendis est unde distinctio at ducimus sapiente eveniet sint quidem, dicta minus tempore voluptatem. Atque rem et expedita.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-4">
+            <div class="col-6">
+              <div class="card my-4 mx-auto">
+                <div class="row justify-content-between align-items-center p-3">
+                  <h5 class="col-10 card-title mb-0">The river</h5>
+                  <h5 class="col-2 card-text">09/23</h5>
+                </div>
+                  <img src="https://images.unsplash.com/photo-1524856949007-80db29955b17?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fHJhbmRvbXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p><strong>357 Likes</strong></p>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo soluta cum ut tempore tempora ab rem, asperiores autem distinctio id? Ullam illo commodi nesciunt officia consequuntur cum itaque dignissimos enim!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-4">
+            <div class="col-6">
+              <div class="card my-4 mx-auto">
+                <div class="row justify-content-between align-items-center p-3">
+                  <h5 class="col-10 card-title mb-0">Down</h5>
+                  <h5 class="col-2 card-text">10/23</h5>
+                </div>
+                  <img src="https://images.unsplash.com/photo-1473172707857-f9e276582ab6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHJhbmRvbXxlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p><strong>238 Likes</strong></p>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit, optio ipsam reiciendis eveniet fugit aliquam inventore laboriosam perspiciatis nihil omnis, possimus voluptatem sequi voluptate unde dolores sapiente? Adipisci, quaerat?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-4">
+            <div class="col-6">
+              <div class="card my-4 mx-auto">
+                <div class="row justify-content-between align-items-center p-3">
+                  <h5 class="col-10 card-title mb-0">My lucky dice</h5>
+                  <h5 class="col-2 card-text">01/24</h5>
+                </div>
+                  <img src="https://images.unsplash.com/photo-1605142859862-978be7eba909?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p><strong>341 Likes</strong></p>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur natus veniam perferendis est unde distinctio at ducimus sapiente eveniet sint quidem, dicta minus tempore voluptatem. Atque rem et expedita.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-4">
+            <div class="col-6">
+              <div class="card my-4 mx-auto">
+                <div class="row justify-content-between align-items-center p-3">
+                  <h5 class="col-10 card-title mb-0">It is very cold</h5>
+                  <h5 class="col-2 card-text">01/24</h5>
+                </div>
+                  <img src="https://images.unsplash.com/photo-1433162653888-a571db5ccccf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p><strong>682 Likes</strong></p>
+                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo soluta cum ut tempore tempora ab rem, asperiores autem distinctio id? Ullam illo commodi nesciunt officia consequuntur cum itaque dignissimos enim!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-4">
+            <div class="col-6">
+              <div class="card my-4 mx-auto">
+                <div class="row justify-content-between align-items-center p-3">
+                  <h5 class="col-10 card-title mb-0">My favorite fruit</h5>
+                  <h5 class="col-2 card-text">02/24</h5>
+                </div>
+                  <img src="https://images.unsplash.com/photo-1587590227264-0ac64ce63ce8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p><strong>259 Likes</strong></p>
+                  <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum suscipit, optio ipsam reiciendis eveniet fugit aliquam inventore laboriosam perspiciatis nihil omnis, possimus voluptatem sequi voluptate unde dolores sapiente? Adipisci, quaerat?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
